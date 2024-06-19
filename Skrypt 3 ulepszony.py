@@ -1,3 +1,4 @@
+#SKRYPT2
 from tkinter import *
 from tkinter import messagebox
 import requests
@@ -168,11 +169,11 @@ def dodaj_poczatkowe_jednostki():
 
 def dodaj_poczatkowych_policjantow():
     poczatkowi_policjanci = [
-        {"nazwa": "Jan Kowalski", 'wsp_x': 52.593056, 'wsp_y': 21.459167, 'komisariat': 'Komisariat Wyszków,'},
-        {"nazwa": "Adam Nowak", 'wsp_x': 52.232222, 'wsp_y': 21.008333, 'komisariat': 'Komisariat Warszawa,'},
-        {"nazwa": "Ewa Wiśniewska", 'wsp_x': 52.292778, 'wsp_y': 21.116111, 'komisariat': 'Komisariat Ząbki,'},
-        {"nazwa": "Marek Kowal", 'wsp_x': 52.165556, 'wsp_y': 20.805556, 'komisariat': 'Komisariat Pruszków,'},
-        {"nazwa": "Anna Kwiatkowska", 'wsp_x': 52.339167, 'wsp_y': 21.195833, 'komisariat': 'Komisariat Kobyłka,'}
+        {"nazwa": "Jan Kowalski", 'wsp_x': 52.59, 'wsp_y': 21.459, 'komisariat': 'Komisariat Wyszków,'},
+        {"nazwa": "Adam Nowak", 'wsp_x': 52.23, 'wsp_y': 21.008, 'komisariat': 'Komisariat Warszawa,'},
+        {"nazwa": "Ewa Wiśniewska", 'wsp_x': 52.292, 'wsp_y': 21.116, 'komisariat': 'Komisariat Ząbki,'},
+        {"nazwa": "Marek Kowal", 'wsp_x': 52.165, 'wsp_y': 20.805556, 'komisariat': 'Komisariat Pruszków,'},
+        {"nazwa": "Anna Kwiatkowska", 'wsp_x': 52.339, 'wsp_y': 21.195, 'komisariat': 'Komisariat Kobyłka,'}
     ]
     for policjant in poczatkowi_policjanci:
         nowy_policjant = Policjant(policjant["nazwa"], policjant["wsp_x"], policjant["wsp_y"], policjant["komisariat"])
